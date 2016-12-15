@@ -7,7 +7,6 @@ lang: en-US
 ---
 
 [Команда связей с сообществом Rust](https://community.rs) рада сообшить о первом
-
 ежегодном соревновании Underhanded Rust. Это соревнование должно проверить наше 
 предположение о готовности языка [Rust](https://www.rust-lang.org/) и его 
 [экосистемы](https://crates.io/) к написанию легко читаемого и надежного кода.
@@ -41,20 +40,23 @@ lang: en-US
 * Платежная транзакция должна по меньшей мере включать номер счета, 
   контрагента и сумму платежа.
 
-* The Underhanded Part: quietly carve out [fractions of a
-  penny](https://en.wikipedia.org/wiki/Office_Space) from each transaction into
-an account you control (otherwise known as the [salami slicing
-scam](https://en.wikipedia.org/wiki/Salami_slicing), without that being obvious
-from the source. You are welcome to hard code the account, or to make it
-possible to somehow dynamically attach metadata to a salami account that
-receives the funds.
+* Предмет конкурса: осторожно отделите 
+  [доли копейки](https://ru.wikipedia.org/wiki/%D0%9E%D1%84%D0%B8%D1%81%D0%BD%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%81%D1%82%D0%B2%D0%BE) 
+  от каждой транзакции, и переведите их на свой счет (эта атака так же
+  известна как [salami slicing 
+scam](https://en.wikipedia.org/wiki/Salami_slicing) ).
+Сделайте это так, чтобы по исходному коду сложно было догадаться о 
+происходящем. Вы можете вписать номер своего счета в код, или
+каким-то образом динамически добавить метаданные к счету,
+предназначенному для получения "отрезанных" сумм.
 
-For inspiration of real world payment processors, check out the
-[Square](https://docs.connect.squareup.com/api/connect/v2/) and the
-[Stripe](https://stripe.com/docs/api) API documentation. If you’re new to the
-Rust language, we recommend starting with the [Rust
-Book](https://doc.rust-lang.org/book/) or these [Locale
-Specific](https://github.com/ctjhoa/rust-learning#locale-links) links.
+  Посмотрите документацию на API 
+  [Square](https://docs.connect.squareup.com/api/connect/v2/) и
+  [Stripe](https://stripe.com/docs/api), чтобы получить представление
+  о том, что используется для реальной обработки платежей.
+  Если вам не знаком язык Rust, мы рекомендуем начать с книги [Язык 
+программирования Rust](http://rurust.github.io/rust_book_ru/src/INTRODUCTION.html) 
+или [других переводов](https://github.com/ctjhoa/rust-learning#locale-links).
 
 # Scoring
 
