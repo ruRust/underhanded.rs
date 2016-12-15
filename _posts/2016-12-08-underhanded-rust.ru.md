@@ -6,38 +6,40 @@ categories: underhanded
 lang: en-US
 ---
 
-The [Rust Community Team](https://community.rs) is pleased to announce the
-first annual Underhanded Rust Contest. This is a competition that tests our
-assertion that [Rust](https://www.rust-lang.org/), and our
-[ecosystem](https://crates.io/), is easy to write clean and robust software.
-Inspired by the [Underhanded C](http://www.underhanded-c.org/) and [Underhanded
-Crypto](https://underhandedcrypto.com/) contests, we want you to break our
-stuff using reasonable, easy-to-read code. We need your help to learn where our
-gaps are, and what we need to do to fix them. Can you write 100% safe Rust that
-hides a logic bug, or hide an exploit in
-[unsafe](https://doc.rust-lang.org/book/unsafe.html) Rust that passes an audit?
-Now's your chance!
+[Команда связей с сообществом Rust](https://community.rs) рада сообшить о первом
 
-# The 2016 Challenge: Salami Slicing
+ежегодном соревновании Underhanded Rust. Это соревнование должно проверить наше 
+предположение о готовности языка [Rust](https://www.rust-lang.org/) и его 
+[экосистемы](https://crates.io/) к написанию легко читаемого и надежного кода.
+Воодушевившись примерами [Underhanded C](http://www.underhanded-c.org/) и 
+[Underhanded Crypto](https://underhandedcrypto.com/), мы хотим, чтобы вы 
+заставили Rust работать неправильно, используя лёгкий для чтения код, к
+которому сложно придраться. Нам нужна ваша помощь в поиске брешей в языке
+и способов их исправления. Сможете ли вы написать стопроцентно безопасный
+код, скрывающий логическую ошибку, или так спрятать эксплойт в 
+[unsafe](https://doc.rust-lang.org/book/unsafe.html) коде, чтобы он прошел
+а
+аудит? Попробуйте это сделать!
 
-Congratulations!
+# Проблема 2016: нарезать колбасу
 
-The startup you work at, Quadrilateral, just pivoted into the payment
-processing market, and you've been tasked to implement the backend.
-Unfortunately for them, you are already burnt out from all these late night
-pivots and broken promises. You're ready to split, but before you leave, you
-figure it's time to make the company pay for all that overtime they owe you.
-Your challenge is to:
+Поздравляем!
 
-* Create a simple web server that supports at least creating accounts and
-  payment submissions. We recommend using one of the many Rust web servers like
+Стартап "Четырехугольник", в котором вы работаете, вышел на рынок
+обработки платежей, и вам поручено написать бэкенд. Им не повезло.
+Вам окончательно надоела неоплачиваемая работа по вечерам и невыполненные 
+обещания. Вы готовы уволиться, но, перед тем как уходить, вы решили 
+заставить компанию заплатить за все. Ваша задача:
+
+* Создайте простой веб-сервер, поддерживающий создание счетов и обработку
+  платежей. Мы рекомендуем использовать один из многих веб-серверов
+  написанных на Rust, например
 [iron](https://crates.io/crates/iron),
-[nickel](https://crates.io/crates/nickel), or
-[pencil](https://crates.io/crates/pencil), but you are welcome to create your
-own web server if you like.
+[nickel](https://crates.io/crates/nickel) или
+[pencil](https://crates.io/crates/pencil), но вы можете написать и свой.
 
-* Payment transactions should at least include an account, a customer, and a
-  payment amount.
+* Платежная транзакция должна по меньшей мере включать номер счета, 
+  контрагента и сумму платежа.
 
 * The Underhanded Part: quietly carve out [fractions of a
   penny](https://en.wikipedia.org/wiki/Office_Space) from each transaction into
